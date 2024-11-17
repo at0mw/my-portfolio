@@ -21,6 +21,7 @@
 @import './styling/theme.css';
 
 body {
+  color: var(--atom-color-on-background);
   background: var(--atom-color-background);
   position: relative;
   margin: 0;

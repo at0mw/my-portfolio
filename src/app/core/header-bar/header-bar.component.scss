@@ -11,6 +11,7 @@
     flex: 1;
     display: flex;
     align-items: center;
+    gap: var(--atom-dimension-medium);
   }
 
   .right-area {

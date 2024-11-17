@@ -1,6 +1,9 @@
-<div class="header-bar surface on-surface-text">
+<div class="header-bar surface on-surface-text relative-container">
   <div class="header-area">
-    <h1>My Portfolio</h1>
+    <atom-nav-hamburger-button
+      [showMenu]="showMenu"
+      (action)="onHamburgerAction()"></atom-nav-hamburger-button>
+<!--    <h1>&lt;portfolio&gt;</h1>-->
   </div>
 
   <div class="header-area">
@@ -17,4 +20,12 @@
     }
   </div>
 
+  <div class="menu-overlay"></div>
+
 </div>
+
+
+
+@if (showMenu) {
+  <div class="screen-darken z-2" (click)="clickedOverlay()"></div>
+}

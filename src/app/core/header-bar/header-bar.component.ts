@@ -1,23 +1,32 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {UiThemeService} from "../../../protocol/services/ui-theme-observer.service";
 import {AsyncPipe, NgClass} from "@angular/common";
+import {NavHamburgerButtonComponent} from "../../single-elements/nav-hamburger-button/nav-hamburger-button.component";
 
 @Component({
   selector: 'atom-header-bar',
   standalone: true,
   imports: [
     NgClass,
-    AsyncPipe
+    AsyncPipe,
+    NavHamburgerButtonComponent
   ],
   templateUrl: './header-bar.component.html',
   styleUrl: './header-bar.component.scss'
 })
 export class HeaderBarComponent {
+  @Input() showMenu: boolean = false;
+  @Output() hamburgerMenuAction: EventEmitter<boolean> = new EventEmitter<boolean>();
   themeModeToggled: boolean = false;
   themeTogglePressedTimeout: any;
   darkMode$ = this.uiThemeService.themeMode$;
   constructor(private uiThemeService: UiThemeService) {
 
+  }
+
+  onHamburgerAction() {
+    this.showMenu = true;
+    this.hamburgerMenuAction.emit();
   }
 
   onLightDarkModeToggle(state: boolean) {
@@ -31,5 +40,9 @@ export class HeaderBarComponent {
     } else {
       this.uiThemeService.setThemeMode('light');
     }
+  }
+
+  clickedOverlay() {
+    this.showMenu = false;
   }
 }
