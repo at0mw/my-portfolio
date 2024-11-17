@@ -1,0 +1,46 @@
+/*
+  Styling for consistent z-index heights
+ */
+.z-developer-master-1 {
+  z-index: var(--atom-elevation-developer-master-1);
+}
+
+.z-developer-master {
+  z-index: var(--atom-elevation-developer-master);
+}
+
+.z-offline-cover {
+  z-index: var(--atom-elevation-disconnect);
+}
+
+.z-ui-cover-content {
+  z-index: var(--atom-elevation-over-cover);
+}
+
+.z-ui-cover {
+  z-index: var(--atom-elevation-cover);
+}
+
+.z-5 {
+  z-index: var(--atom-elevation-five);
+}
+
+.z-4 {
+  z-index: var(--atom-elevation-four);
+}
+
+.z-3 {
+  z-index: var(--atom-elevation-three);
+}
+
+.z-2 {
+  z-index: var(--atom-elevation-two);
+}
+
+.z-1 {
+  z-index: var(--atom-elevation-one);
+}
+
+.z-0 {
+  z-index: var(--atom-elevation-zero);
+}

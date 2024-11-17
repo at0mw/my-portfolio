@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import './styling/utility-classes/animation.styling';
+@import './styling/utility-classes/border-outline.styling';
+@import './styling/utility-classes/button.styling';
+@import './styling/utility-classes/colour.styling';
+@import './styling/utility-classes/container.styling';
+@import './styling/utility-classes/divider.styling';
+@import './styling/utility-classes/elevation.styling';
+@import './styling/utility-classes/icon.styling';
+@import './styling/utility-classes/input.styling';
+@import './styling/utility-classes/layout.styling';
+@import './styling/utility-classes/margin.styling';
+@import './styling/utility-classes/opacity.styling';
+@import './styling/utility-classes/overlay.styling';
+@import './styling/utility-classes/shape.styling';
+@import './styling/utility-classes/spacing.styling';
+@import './styling/utility-classes/stack.styling';
+@import './styling/utility-classes/padding.styling';
+@import './styling/utility-classes/type.styling';
+@import './styling/utility-classes/web-core.styling';
+@import './styling/utility-classes/z-index.styling';
+@import './styling/theme.css';
+
+body {
+  background: var(--atom-color-surface-container);
+}

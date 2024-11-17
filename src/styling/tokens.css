@@ -1,0 +1,157 @@
+:root {
+  /* display - large */
+  --atom-typescale-display-large-font-family-name: Roboto;
+  --atom-typescale-display-large-font-family-style: Regular;
+  --atom-typescale-display-large-font-weight: 400px;
+  --atom-typescale-display-large-font-size: 57px;
+  --atom-typescale-display-large-line-height: 64px;
+  --atom-typescale-display-large-letter-spacing: -0.25px;
+  /* display - medium */
+  --atom-typescale-display-medium-font-family-name: Roboto;
+  --atom-typescale-display-medium-font-family-style: Regular;
+  --atom-typescale-display-medium-font-weight: 400px;
+  --atom-typescale-display-medium-font-size: 45px;
+  --atom-typescale-display-medium-line-height: 52px;
+  --atom-typescale-display-medium-letter-spacing: 0px;
+  /* display - small */
+  --atom-typescale-display-small-font-family-name: Roboto;
+  --atom-typescale-display-small-font-family-style: Regular;
+  --atom-typescale-display-small-font-weight: 400px;
+  --atom-typescale-display-small-font-size: 36px;
+  --atom-typescale-display-small-line-height: 44px;
+  --atom-typescale-display-small-letter-spacing: 0px;
+  /* headline - large */
+  --atom-typescale-headline-large-font-family-name: Roboto;
+  --atom-typescale-headline-large-font-family-style: Regular;
+  --atom-typescale-headline-large-font-weight: 400px;
+  --atom-typescale-headline-large-font-size: 32px;
+  --atom-typescale-headline-large-line-height: 40px;
+  --atom-typescale-headline-large-letter-spacing: 0px;
+  /* headline - medium */
+  --atom-typescale-headline-medium-font-family-name: Roboto;
+  --atom-typescale-headline-medium-font-family-style: Regular;
+  --atom-typescale-headline-medium-font-weight: 400px;
+  --atom-typescale-headline-medium-font-size: 28px;
+  --atom-typescale-headline-medium-line-height: 36px;
+  --atom-typescale-headline-medium-letter-spacing: 0px;
+  /* headline - small */
+  --atom-typescale-headline-small-font-family-name: Roboto;
+  --atom-typescale-headline-small-font-family-style: Regular;
+  --atom-typescale-headline-small-font-weight: 400px;
+  --atom-typescale-headline-small-font-size: 24px;
+  --atom-typescale-headline-small-line-height: 32px;
+  --atom-typescale-headline-small-letter-spacing: 0px;
+  /* body - large */
+  --atom-typescale-body-large-font-family-name: Roboto;
+  --atom-typescale-body-large-font-family-style: Regular;
+  --atom-typescale-body-large-font-weight: 400px;
+  --atom-typescale-body-large-font-size: 16px;
+  --atom-typescale-body-large-line-height: 24px;
+  --atom-typescale-body-large-letter-spacing: 0.50px;
+  /* body - medium */
+  --atom-typescale-body-medium-font-family-name: Roboto;
+  --atom-typescale-body-medium-font-family-style: Regular;
+  --atom-typescale-body-medium-font-weight: 400px;
+  --atom-typescale-body-medium-font-size: 14px;
+  --atom-typescale-body-medium-line-height: 20px;
+  --atom-typescale-body-medium-letter-spacing: 0.25px;
+  /* body - small */
+  --atom-typescale-body-small-font-family-name: Roboto;
+  --atom-typescale-body-small-font-family-style: Regular;
+  --atom-typescale-body-small-font-weight: 400px;
+  --atom-typescale-body-small-font-size: 12px;
+  --atom-typescale-body-small-line-height: 16px;
+  --atom-typescale-body-small-letter-spacing: 0.40px;
+  /* label - large */
+  --atom-typescale-label-large-font-family-name: Roboto;
+  --atom-typescale-label-large-font-family-style: Medium;
+  --atom-typescale-label-large-font-weight: 500px;
+  --atom-typescale-label-large-font-size: 14px;
+  --atom-typescale-label-large-line-height: 20px;
+  --atom-typescale-label-large-letter-spacing: 0.10px;
+  /* label - medium */
+  --atom-typescale-label-medium-font-family-name: Roboto;
+  --atom-typescale-label-medium-font-family-style: Medium;
+  --atom-typescale-label-medium-font-weight: 500px;
+  --atom-typescale-label-medium-font-size: 12px;
+  --atom-typescale-label-medium-line-height: 16px;
+  --atom-typescale-label-medium-letter-spacing: 0.50px;
+  /* label - small */
+  --atom-typescale-label-small-font-family-name: Roboto;
+  --atom-typescale-label-small-font-family-style: Medium;
+  --atom-typescale-label-small-font-weight: 500px;
+  --atom-typescale-label-small-font-size: 11px;
+  --atom-typescale-label-small-line-height: 16px;
+  --atom-typescale-label-small-letter-spacing: 0.50px;
+  /* title - large */
+  --atom-typescale-title-large-font-family-name: Roboto;
+  --atom-typescale-title-large-font-family-style: Regular;
+  --atom-typescale-title-large-font-weight: 400px;
+  --atom-typescale-title-large-font-size: 22px;
+  --atom-typescale-title-large-line-height: 28px;
+  --atom-typescale-title-large-letter-spacing: 0px;
+  /* title - medium */
+  --atom-typescale-title-medium-font-family-name: Roboto;
+  --atom-typescale-title-medium-font-family-style: Medium;
+  --atom-typescale-title-medium-font-weight: 500px;
+  --atom-typescale-title-medium-font-size: 16px;
+  --atom-typescale-title-medium-line-height: 24px;
+  --atom-typescale-title-medium-letter-spacing: 0.15px;
+  /* title - small */
+  --atom-typescale-title-small-font-family-name: Roboto;
+  --atom-typescale-title-small-font-family-style: Medium;
+  --atom-typescale-title-small-font-weight: 500px;
+  --atom-typescale-title-small-font-size: 14px;
+  --atom-typescale-title-small-line-height: 20px;
+  --atom-typescale-title-small-letter-spacing: 0.10px;
+  /* Shape Styling */
+  --atom-shape-corner-none: 0;
+  --atom-shape-corner-extra-small: 0.25rem;
+  --atom-shape-corner-small: 0.5rem;
+  --atom-shape-corner-medium: 0.75rem;
+  --atom-shape-corner-large: 1rem;
+  --atom-shape-corner-extra-large: 1.75rem;
+  --atom-shape-corner-full: 50%;
+  /* Elevation */
+  --atom-elevation-zero: 0;
+  --atom-elevation-one: 10;
+  --atom-elevation-two: 20;
+  --atom-elevation-three: 30;
+  --atom-elevation-four: 40;
+  --atom-elevation-five: 50;
+  --atom-elevation-cover: 100;
+  --atom-elevation-over-cover: 150;
+  --atom-elevation-disconnect: 200;
+  --atom-elevation-developer-master: 2000;
+  /* Elevation Styling */
+  --atom-elevation-zero-shadow: rgba(0, 0, 0, 0.2) 0 0 0 0, rgba(0, 0, 0, 0.14) 0 0 0 0, rgba(0, 0, 0, 0.12) 0 0 0 0;
+  --atom-elevation-one-shadow: rgba(0, 0, 0, 0.2) 0 2px 1px -1px, rgba(0, 0, 0, 0.14) 0 1px 1px 0, rgba(0, 0, 0, 0.12) 0 1px 3px 0;
+  --atom-elevation-two-shadow: rgba(0, 0, 0, 0.2) 0 3px 3px -2px, rgba(0, 0, 0, 0.14) 0 3px 4px 0px, rgba(0, 0, 0, 0.12) 0 1px 8px 0;
+  --atom-elevation-three-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+  --atom-elevation-four-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
+  --atom-elevation-five-shadow: rgba(0, 0, 0, 0.2) 0 7px 8px -4px, rgba(0, 0, 0, 0.14) 0px 12px 17px 2px, rgba(0, 0, 0, 0.12) 0px 5px 22px 4px;
+  /* Icon Styling */
+  --atom-icon-extra-small: 1rem;
+  --atom-icon-small: 18px;
+  --atom-icon-medium: 1.5rem;
+  --atom-icon-large:  2.5rem;
+  --atom-icon-extra-large: 3rem;
+
+  --atom-outline-text: rgba(117, 121, 108, 0.2);
+  --atom-header-container-shadow: -8px 12px 18px 0 rgba(21, 21, 62, 0.3);
+  --atom-header-list-border: #e8e8f7;
+
+  /* Dimensions */
+  --atom-dimension-xxs: 0.1rem;
+  --atom-dimension-extra-small: 0.25rem;
+  --atom-dimension-small: 0.5rem;
+  --atom-dimension-medium: 1rem;
+  --atom-dimension-large: 1.5rem;
+  --atom-dimension-extra-large: 2rem;
+  --atom-dimension-xxl: 3rem;
+}
+[data-theme-mode='dark']{
+  --atom-header-container-shadow: 0 1rem 1.125rem rgba(40, 40, 40, 0.15);
+  --atom-header-container-border: rgba(255,255,255,0.1);
+  --atom-header-list-border: rgba(255,255,255,0.1);
+}

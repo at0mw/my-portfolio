@@ -1,0 +1,206 @@
+h1 {
+  font-family: var(--atom-typescale-headline-large-font-family-name), serif;
+  font-style: var(--atom-typescale-headline-large-font-family-style);
+  font-weight: var(--atom-typescale-headline-large-font-weight);
+  font-size: var(--atom-typescale-headline-large-font-size);
+  letter-spacing: var(--atom-typescale-headline-large-tracking);
+  line-height: var(--atom-typescale-headline-large-height);
+  text-transform: var(--atom-typescale-headline-large-text-transform);
+  text-decoration: var(--atom-typescale-headline-large-text-decoration);
+}
+
+h2 {
+  font-family: var(--atom-typescale-headline-medium-font-family-name), serif;
+  font-style: var(--atom-typescale-headline-medium-font-family-style);
+  font-weight: var(--atom-typescale-headline-medium-font-weight);
+  font-size: var(--atom-typescale-headline-medium-font-size);
+  letter-spacing: var(--atom-typescale-headline-medium-tracking);
+  line-height: var(--atom-typescale-headline-medium-height);
+  text-transform: var(--atom-typescale-headline-medium-text-transform);
+  text-decoration: var(--atom-typescale-headline-medium-text-decoration);
+}
+
+h3 {
+  font-family: var(--atom-typescale-headline-small-font-family-name), serif;
+  font-style: var(--atom-typescale-headline-small-font-family-style);
+  font-weight: var(--atom-typescale-headline-small-font-weight);
+  font-size: var(--atom-typescale-headline-small-font-size);
+  letter-spacing: var(--atom-typescale-headline-small-tracking);
+  line-height: var(--atom-typescale-headline-small-height);
+  text-transform: var(--atom-typescale-headline-small-text-transform);
+  text-decoration: var(--atom-typescale-headline-small-text-decoration);
+}
+
+label {
+  font-family: var(--atom-typescale-body-medium-font-family-name), serif;;
+  font-style: var(--atom-typescale-body-medium-font-family-style);
+  font-weight: var(--atom-typescale-body-medium-font-weight);
+  font-size: var(--atom-typescale-body-medium-font-size);
+  letter-spacing: var(--atom-typescale-body-medium-tracking);
+  line-height: var(--atom-typescale-body-medium-height);
+  text-transform: var(--atom-typescale-body-medium-text-transform);
+  text-decoration: var(--atom-typescale-body-medium-text-decoration);
+  opacity: 0.7;
+}
+
+li {
+  font-family: var(--atom-typescale-label-large-font-family-name), serif;
+  font-style: var(--atom-typescale-label-large-font-family-style);
+  font-weight: var(--atom-typescale-label-large-font-weight);
+  font-size: var(--atom-typescale-label-large-font-size);
+  letter-spacing: var(--atom-typescale-label-large-tracking);
+  line-height: var(--atom-typescale-label-large-height);
+  text-transform: var(--atom-typescale-label-large-text-transform);
+  text-decoration: var(--atom-typescale-label-large-text-decoration);
+}
+
+.display-large{
+  font-family: var(--atom-typescale-display-large-font-family-name), serif;
+  font-style: var(--atom-typescale-display-large-font-family-style);
+  font-weight: var(--atom-typescale-display-large-font-weight);
+  font-size: var(--atom-typescale-display-large-font-size);
+  letter-spacing: var(--atom-typescale-display-large-tracking);
+  line-height: var(--atom-typescale-display-large-height);
+  text-transform: var(--atom-typescale-display-large-text-transform);
+  text-decoration: var(--atom-typescale-display-large-text-decoration);
+}
+.display-medium{
+  font-family: var(--atom-typescale-display-medium-font-family-name), serif;
+  font-style: var(--atom-typescale-display-medium-font-family-style);
+  font-weight: var(--atom-typescale-display-medium-font-weight);
+  font-size: var(--atom-typescale-display-medium-font-size);
+  letter-spacing: var(--atom-typescale-display-medium-tracking);
+  line-height: var(--atom-typescale-display-medium-height);
+  text-transform: var(--atom-typescale-display-medium-text-transform);
+  text-decoration: var(--atom-typescale-display-medium-text-decoration);
+}
+.display-small{
+  font-family: var(--atom-typescale-display-small-font-family-name), serif;
+  font-style: var(--atom-typescale-display-small-font-family-style);
+  font-weight: var(--atom-typescale-display-small-font-weight);
+  font-size: var(--atom-typescale-display-small-font-size);
+  letter-spacing: var(--atom-typescale-display-small-tracking);
+  line-height: var(--atom-typescale-display-small-height);
+  text-transform: var(--atom-typescale-display-small-text-transform);
+  text-decoration: var(--atom-typescale-display-small-text-decoration);
+}
+.headline-large{
+  font-family: var(--atom-typescale-headline-large-font-family-name), serif;
+  font-style: var(--atom-typescale-headline-large-font-family-style);
+  font-weight: var(--atom-typescale-headline-large-font-weight);
+  font-size: var(--atom-typescale-headline-large-font-size);
+  letter-spacing: var(--atom-typescale-headline-large-tracking);
+  line-height: var(--atom-typescale-headline-large-height);
+  text-transform: var(--atom-typescale-headline-large-text-transform);
+  text-decoration: var(--atom-typescale-headline-large-text-decoration);
+}
+.headline-medium{
+  font-family: var(--atom-typescale-headline-medium-font-family-name), serif;
+  font-style: var(--atom-typescale-headline-medium-font-family-style);
+  font-weight: var(--atom-typescale-headline-medium-font-weight);
+  font-size: var(--atom-typescale-headline-medium-font-size);
+  letter-spacing: var(--atom-typescale-headline-medium-tracking);
+  line-height: var(--atom-typescale-headline-medium-height);
+  text-transform: var(--atom-typescale-headline-medium-text-transform);
+  text-decoration: var(--atom-typescale-headline-medium-text-decoration);
+}
+.headline-small{
+  font-family: var(--atom-typescale-headline-small-font-family-name), serif;
+  font-style: var(--atom-typescale-headline-small-font-family-style);
+  font-weight: var(--atom-typescale-headline-small-font-weight);
+  font-size: var(--atom-typescale-headline-small-font-size);
+  letter-spacing: var(--atom-typescale-headline-small-tracking);
+  line-height: var(--atom-typescale-headline-small-height);
+  text-transform: var(--atom-typescale-headline-small-text-transform);
+  text-decoration: var(--atom-typescale-headline-small-text-decoration);
+}
+.body-large{
+  font-family: var(--atom-typescale-body-large-font-family-name), serif;
+  font-style: var(--atom-typescale-body-large-font-family-style);
+  font-weight: var(--atom-typescale-body-large-font-weight);
+  font-size: var(--atom-typescale-body-large-font-size);
+  letter-spacing: var(--atom-typescale-body-large-tracking);
+  line-height: var(--atom-typescale-body-large-height);
+  text-transform: var(--atom-typescale-body-large-text-transform);
+  text-decoration: var(--atom-typescale-body-large-text-decoration);
+}
+.body-medium{
+  font-family: var(--atom-typescale-body-medium-font-family-name), serif;
+  font-style: var(--atom-typescale-body-medium-font-family-style);
+  font-weight: var(--atom-typescale-body-medium-font-weight);
+  font-size: var(--atom-typescale-body-medium-font-size);
+  letter-spacing: var(--atom-typescale-body-medium-tracking);
+  line-height: var(--atom-typescale-body-medium-height);
+  text-transform: var(--atom-typescale-body-medium-text-transform);
+  text-decoration: var(--atom-typescale-body-medium-text-decoration);
+}
+.body-small{
+  font-family: var(--atom-typescale-body-small-font-family-name), serif;
+  font-style: var(--atom-typescale-body-small-font-family-style);
+  font-weight: var(--atom-typescale-body-small-font-weight);
+  font-size: var(--atom-typescale-body-small-font-size);
+  letter-spacing: var(--atom-typescale-body-small-tracking);
+  line-height: var(--atom-typescale-body-small-height);
+  text-transform: var(--atom-typescale-body-small-text-transform);
+  text-decoration: var(--atom-typescale-body-small-text-decoration);
+}
+.label-large{
+  font-family: var(--atom-typescale-label-large-font-family-name), serif;
+  font-style: var(--atom-typescale-label-large-font-family-style);
+  font-weight: var(--atom-typescale-label-large-font-weight);
+  font-size: var(--atom-typescale-label-large-font-size);
+  letter-spacing: var(--atom-typescale-label-large-tracking);
+  line-height: var(--atom-typescale-label-large-height);
+  text-transform: var(--atom-typescale-label-large-text-transform);
+  text-decoration: var(--atom-typescale-label-large-text-decoration);
+}
+.label-medium{
+  font-family: var(--atom-typescale-label-medium-font-family-name), serif;
+  font-style: var(--atom-typescale-label-medium-font-family-style);
+  font-weight: var(--atom-typescale-label-medium-font-weight);
+  font-size: var(--atom-typescale-label-medium-font-size);
+  letter-spacing: var(--atom-typescale-label-medium-tracking);
+  line-height: var(--atom-typescale-label-medium-height);
+  text-transform: var(--atom-typescale-label-medium-text-transform);
+  text-decoration: var(--atom-typescale-label-medium-text-decoration);
+}
+.label-small{
+  font-family: var(--atom-typescale-label-small-font-family-name), serif;
+  font-style: var(--atom-typescale-label-small-font-family-style);
+  font-weight: var(--atom-typescale-label-small-font-weight);
+  font-size: var(--atom-typescale-label-small-font-size);
+  letter-spacing: var(--atom-typescale-label-small-tracking);
+  line-height: var(--atom-typescale-label-small-height);
+  text-transform: var(--atom-typescale-label-small-text-transform);
+  text-decoration: var(--atom-typescale-label-small-text-decoration);
+}
+.title-large{
+  font-family: var(--atom-typescale-title-large-font-family-name), serif;
+  font-style: var(--atom-typescale-title-large-font-family-style);
+  font-weight: var(--atom-typescale-title-large-font-weight);
+  font-size: var(--atom-typescale-title-large-font-size);
+  letter-spacing: var(--atom-typescale-title-large-tracking);
+  line-height: var(--atom-typescale-title-large-height);
+  text-transform: var(--atom-typescale-title-large-text-transform);
+  text-decoration: var(--atom-typescale-title-large-text-decoration);
+}
+.title-medium{
+  font-family: var(--atom-typescale-title-medium-font-family-name), serif;
+  font-style: var(--atom-typescale-title-medium-font-family-style);
+  font-weight: var(--atom-typescale-title-medium-font-weight);
+  font-size: var(--atom-typescale-title-medium-font-size);
+  letter-spacing: var(--atom-typescale-title-medium-tracking);
+  line-height: var(--atom-typescale-title-medium-height);
+  text-transform: var(--atom-typescale-title-medium-text-transform);
+  text-decoration: var(--atom-typescale-title-medium-text-decoration);
+}
+.title-small{
+  font-family: var(--atom-typescale-title-small-font-family-name), serif;
+  font-style: var(--atom-typescale-title-small-font-family-style);
+  font-weight: var(--atom-typescale-title-small-font-weight);
+  font-size: var(--atom-typescale-title-small-font-size);
+  letter-spacing: var(--atom-typescale-title-small-tracking);
+  line-height: var(--atom-typescale-title-small-height);
+  text-transform: var(--atom-typescale-title-small-text-transform);
+  text-decoration: var(--atom-typescale-title-small-text-decoration);
+}
