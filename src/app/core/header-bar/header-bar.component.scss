@@ -1,0 +1,71 @@
+.header-bar {
+  height: 80px;
+  box-sizing: border-box;
+  padding: var(--atom-dimension-medium);
+  //background: var(--atom-nav-bar-colour);
+  box-shadow: -7.829px 11.607px 20px 0px rgba(144, 143, 160, 0.09);
+  margin-bottom: var(--atom-dimension-medium);
+  display: flex;
+
+  .header-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-area {
+    justify-content: flex-end;
+  }
+}
+.header-button {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--atom-color-surface-container-high);
+
+    &.settings-button {
+      animation: spin 2s infinite linear;
+    }
+  }
+
+  .profile-image {
+    border-radius: 50%;
+  }
+}
+
+
+.light-dark-mode-button {
+  overflow: hidden;
+  &.toggled {
+    i {
+      animation: fromAbove 0.3s forwards;
+    }
+
+    &.dark-mode {
+      i {
+        animation: fromBelow 0.3s forwards;
+      }
+    }
+  }
+}
+
+@keyframes fromAbove {
+  from { top: -20px;}
+  to { top: 0; }
+}
+
+@keyframes fromBelow {
+  from { bottom: -20px;}
+  to { bottom: 0; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
