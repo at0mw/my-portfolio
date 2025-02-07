@@ -1,0 +1,20 @@
+.header-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--atom-dimension-medium);
+}
+
+.header-button {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--atom-color-surface-container-high);
+  }
+}

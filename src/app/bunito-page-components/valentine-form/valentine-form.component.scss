@@ -1,0 +1,24 @@
+.bunito-valentine {
+  display: flex;
+  gap: 1rem;
+  //justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  //padding: 1rem;
+  padding-top: 1rem;
+}
+.bunito-card {
+  min-width: 1100px;
+}
+@media screen and (max-width: 1200px) {
+  .bunito-card {
+    min-width: 0;
+    width: 100%;
+  }
+}
+.header-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

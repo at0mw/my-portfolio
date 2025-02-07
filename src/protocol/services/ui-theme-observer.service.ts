@@ -22,26 +22,22 @@ export class UiThemeService {
   constructor() {
     const themeMode = localStorage.getItem('themeMode');
     if (themeMode) {
-      this.themeModeSubject.next(themeMode);
-      document.documentElement.setAttribute('data-theme-mode', themeMode);
+      this.setThemeMode(themeMode);
     }
 
     const contrastMode = localStorage.getItem('contrastMode');
     if (contrastMode) {
-      this.contrastModeSubject.next(contrastMode);
-      document.documentElement.setAttribute('data-contrast', contrastMode);
+      this.setContrastMode(contrastMode);
     }
 
     const themeColour = localStorage.getItem('themeColour');
     if (themeColour) {
-      this.themeColourSubject.next(themeColour);
-      document.documentElement.setAttribute('data-theme-colour', themeColour);
+      this.setThemeColour(themeColour);
     }
 
     const navBarColour = localStorage.getItem('navBarColour');
     if (navBarColour) {
-      this.navBarColourSubject.next(navBarColour);
-      document.documentElement.setAttribute('data-nav-bar-colour', navBarColour);
+      this.setNavBarColour(navBarColour);
     }
   }
 
@@ -49,6 +45,20 @@ export class UiThemeService {
     this.themeModeSubject.next(mode);
     document.documentElement.setAttribute('data-theme-mode', mode);
     localStorage.setItem('themeMode', mode);
+    if(mode === 'dark') {
+      this.setDarkMode();
+    } else {
+      this.setLightMode();
+    }
+  }
+
+
+  setDarkMode() {
+    document.documentElement.classList.add('atom-dark');
+  }
+
+  setLightMode() {
+    document.documentElement.classList.remove('atom-dark');
   }
 
   setContrastMode(contrast: string) {
