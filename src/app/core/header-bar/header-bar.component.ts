@@ -4,15 +4,14 @@ import {AsyncPipe, NgClass} from "@angular/common";
 import {NavHamburgerButtonComponent} from "../../single-elements/nav-hamburger-button/nav-hamburger-button.component";
 
 @Component({
-  selector: 'atom-header-bar',
-  standalone: true,
-  imports: [
-    NgClass,
-    AsyncPipe,
-    NavHamburgerButtonComponent
-  ],
-  templateUrl: './header-bar.component.html',
-  styleUrl: './header-bar.component.scss'
+    selector: 'atom-header-bar',
+    imports: [
+        NgClass,
+        AsyncPipe,
+        NavHamburgerButtonComponent
+    ],
+    templateUrl: './header-bar.component.html',
+    styleUrl: './header-bar.component.scss'
 })
 export class HeaderBarComponent {
   @Input() showMenu: boolean = false;

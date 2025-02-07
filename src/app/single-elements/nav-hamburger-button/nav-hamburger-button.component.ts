@@ -2,13 +2,12 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {NgClass} from "@angular/common";
 
 @Component({
-  selector: 'atom-nav-hamburger-button',
-  standalone: true,
-  imports: [
-    NgClass
-  ],
-  templateUrl: './nav-hamburger-button.component.html',
-  styleUrl: './nav-hamburger-button.component.scss'
+    selector: 'atom-nav-hamburger-button',
+    imports: [
+        NgClass
+    ],
+    templateUrl: './nav-hamburger-button.component.html',
+    styleUrl: './nav-hamburger-button.component.scss'
 })
 export class NavHamburgerButtonComponent {
   @Input() showMenu: boolean = false;
