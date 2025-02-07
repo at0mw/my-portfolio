@@ -8,3 +8,12 @@
   70% { transform: rotate(0deg); } /* Return to start position */
   100% { transform: rotate(0deg); } /* Stay at start until next cycle */
 }
+.profile-image {
+  border-radius: var(--atom-dimension-xxxl);
+  object-fit: cover;
+}
+.text-block {
+  //align-items: center;
+  text-align: center;
+  width: 400px;
+}

@@ -143,12 +143,13 @@
 
   /* Dimensions */
   --atom-dimension-xxs: 0.1rem;
-  --atom-dimension-extra-small: 0.25rem;
-  --atom-dimension-small: 0.5rem;
-  --atom-dimension-medium: 1rem;
-  --atom-dimension-large: 1.5rem;
-  --atom-dimension-extra-large: 2rem;
+  --atom-dimension-xs: 0.25rem;
+  --atom-dimension-s: 0.5rem;
+  --atom-dimension-m: 1rem;
+  --atom-dimension-l: 1.5rem;
+  --atom-dimension-xl: 2rem;
   --atom-dimension-xxl: 3rem;
+  --atom-dimension-xxxl: 5rem;
 }
 [data-theme-mode='dark']{
   --atom-header-container-shadow: 0 1rem 1.125rem rgba(40, 40, 40, 0.15);
