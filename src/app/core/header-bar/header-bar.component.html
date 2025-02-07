@@ -1,0 +1,31 @@
+<div class="header-bar surface on-surface-text relative-container">
+  <div class="header-area">
+    <atom-nav-hamburger-button
+      [showMenu]="showMenu"
+      (action)="onHamburgerAction()"></atom-nav-hamburger-button>
+<!--    <h1>&lt;portfolio&gt;</h1>-->
+  </div>
+
+  <div class="header-area">
+
+  </div>
+
+  <div class="header-area right-area">
+    @if (darkMode$ | async; as darkMode) {
+      <div class="header-button outline-text light-dark-mode-button" (click)="onLightDarkModeToggle(darkMode !== 'dark')"
+           [ngClass]="{'dark-mode': darkMode === 'dark', 'toggled': themeModeToggled}">
+        <i class="relative-container fa-light small-icon"
+           [ngClass]="{'fa-sun-bright': darkMode !== 'dark', 'fa-moon': darkMode === 'dark'}"></i>
+      </div>
+    }
+  </div>
+
+  <div class="menu-overlay"></div>
+
+</div>
+
+
+
+@if (showMenu) {
+  <div class="screen-darken z-2" (click)="clickedOverlay()"></div>
+}

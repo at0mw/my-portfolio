@@ -1,0 +1,34 @@
+﻿[data-nav-bar-colour=''] {
+  --atom-nav-bar-colour: #669B00;
+  --atom-on-nav-bar-colour: #FAFFFAFA;
+  --atom-nav-bar-highlight-colour: #FFFFFF;
+  --atom-on-nav-bar-border-colour: #FFFFFF1A;
+
+}
+[data-nav-bar-colour='purple']{
+  --atom-nav-bar-colour: #0e0e23;
+  --atom-on-nav-bar-colour: #FAFFFA66;
+  --atom-nav-bar-highlight-colour: #FFFFFF;
+  --atom-on-nav-bar-border-colour: #FFFFFF1A;
+}
+[data-nav-bar-colour='blue']{
+  --atom-nav-bar-colour: #5c90A3;
+  --atom-on-nav-bar-colour: #FAFFFAFA;
+  --atom-nav-bar-highlight-colour: #FFFFFF;
+  --atom-on-nav-bar-border-colour: #FFFFFF1A;
+}
+/*[data-nav-bar-colour='white']{*/
+/*  --atom-nav-bar-colour: #FAFFFA;*/
+/*}*/
+
+.nav-bar-colour {
+  background-color: var(--atom-nav-bar-colour);
+}
+
+.on-nav-bar-colour {
+  color: var(--atom-on-nav-bar-colour);
+}
+
+.nav-bar-outline {
+  background-color: var(--atom-on-nav-bar-border-colour);
+}

@@ -1,0 +1,132 @@
+// Mixin for creating a flex container
+@mixin flex-container($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+// Flex direction utilities
+.flex-row {
+  @include flex-container(row);
+}
+
+.flex-column {
+  @include flex-container(column);
+}
+
+// Justify content utilities
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+// Align items utilities
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+// Gap utilities
+.gap-0 {
+  gap: 0;
+}
+
+.gap-sm {
+  gap: var(--atom-dimension-s);
+}
+
+.gap-md {
+  gap: var(--atom-dimension-m);
+}
+
+.gap-lg {
+  gap: var(--atom-dimension-l);
+}
+
+// Wrap utilities
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.no-wrap {
+  flex-wrap: nowrap;
+}
+
+// Full-page flex layout
+.full-page-flex {
+  @include flex-container(column);
+  height: 100%; // Ensures full-page layout
+}
+
+// Centering utility (horizontal and vertical centering)
+.flex-center {
+  @include flex-container(row, center, center);
+}
+
+.flex-column-center {
+  @include flex-container(column, center, center);
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.overflow-scroll {
+  overflow: auto;
+}
+//.horizontal-flex {
+//  @include flex-container(row, center, center, 1rem);
+//}
+//
+//.horizontal-flex--space-between {
+//  @include flex-container(row, space-between, center, 1rem);
+//}
+//
+.flex-right {
+  @include flex-container(row, flex-end, center);
+}
+//
+//.full-page-flex {
+//  @include flex-container(column);
+//  //height: 100%;
+//}
+//
+.standard-gap {
+  gap: 1rem;
+}
