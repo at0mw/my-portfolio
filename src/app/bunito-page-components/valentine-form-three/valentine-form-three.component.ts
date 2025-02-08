@@ -29,10 +29,11 @@ export class ValentineFormThreeComponent {
   onFoodOptionSelect(foodOption: FoodOptions)   {
     this.valentineFormGroup.controls['foodOption'].setValue(foodOption);
     this.playAudio(foodOption.sound);
-
   }
 
   private playAudio(audioKey: string) {
+    if (!audioKey) return;
+
     if (this.currentAudio) {
       this.currentAudio.pause();
       this.currentAudio.currentTime = 0;

@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Button} from "primeng/button";
 import {FormGroup} from "@angular/forms";
 import {DatePipe} from "@angular/common";
@@ -12,18 +12,16 @@ import {DatePipe} from "@angular/common";
   templateUrl: './valentine-form-four.component.html',
   styleUrl: './valentine-form-four.component.scss'
 })
-export class ValentineFormFourComponent {
+export class ValentineFormFourComponent implements OnInit {
   @Input() valentineFormGroup!: FormGroup;
   @Output() activateCallback = new EventEmitter<number>();
   private currentAudio: HTMLAudioElement | null = null;
 
-  onPrevious() {
-    this.activateCallback.emit(3);
+  ngOnInit() {
+    this.playBrainRot();
   }
 
-  onSubmit() {
-    // Email invitation
-    // TODO - Go to celebration page xD
+  private playBrainRot() {
     if (this.currentAudio) {
       this.currentAudio.pause();
       this.currentAudio.currentTime = 0;

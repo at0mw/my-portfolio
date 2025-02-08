@@ -24,12 +24,10 @@ export const routes: Routes = [
     path: 'bunito',
     title: 'Bunito',
     component: BunitoPageComponent,
-    // children: [
-    //   {path: '', pathMatch: 'full', redirectTo: 'proposal'},
-    //   {path: 'proposal', title: 'Proposal', component: ValentineFormOneComponent},
-    //   {path: 'date', title: 'Date', component: ValentineFormTwoComponent},
-    //   {path: 'plans', title: 'Plans', component: ValentineFormThreeComponent},
-    //   {path: 'invitation', title: 'Invitation', component: ValentineFormFourComponent},
-    // ]
-  },
+  }
+  // {
+  //   path: 'bunito/completo',
+  //   title: 'A Royal Invitation',
+  //   component: BunitoPageComponent,
+  // },
 ];

@@ -27,12 +27,10 @@ export class ValentineFormComponent {
   valentineFormGroup: FormGroup = new FormGroup({});
   formSteps: any[] = [
     {
-      label: 'Proposal',
-      component: ValentineFormOneComponent
+      label: 'Proposal'
     },
     {
-      label: 'Date',
-      component: ValentineFormTwoComponent
+      label: 'Date'
     },
     {
       label: 'Food',
@@ -41,7 +39,8 @@ export class ValentineFormComponent {
       label: 'Invitation',
     }
   ]
-  activeStep: number = 2;
+  activeStep: number = 0;
+
   constructor() {
     // Setup form
     this.valentineFormGroup.addControl('valentineAcceptance', new FormControl(false, Validators.requiredTrue));
