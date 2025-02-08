@@ -52,4 +52,5 @@ h1, h2, h3, h4 {
 }
 .overlay-shadow {
   box-shadow: var(--atom-header-container-shadow);
+  border: 1px solid var(--atom-header-container-border);
 }
