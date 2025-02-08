@@ -50,3 +50,6 @@ h1, h2, h3, h4 {
     flex: 1;
   }
 }
+.overlay-shadow {
+  box-shadow: var(--atom-header-container-shadow);
+}
