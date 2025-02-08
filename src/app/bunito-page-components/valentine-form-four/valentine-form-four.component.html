@@ -1,12 +1,15 @@
 <div class="form-page">
 
   <div class="form-selection-area">
-    <div class="stack flex-center label-large opacity-7">It's a date! Your attendance will be required on {{valentineFormGroup.controls['date'].getRawValue() | date: 'fullDate'}}</div>
+    <h1 class="stack">Le Boons date secured!</h1>
+    <img class="cool-cat-img" src="/assets/images/cool-cat.webp" alt="Bunito Valentine - Cool Cat"/>
+    <div class="stack flex-center label-large opacity-7"> Your attendance will be required on {{valentineFormGroup.controls['date'].getRawValue() | date: 'fullDate'}}.</div>
+    <div class="stack flex-center label-large opacity-7">An exquisite {{valentineFormGroup.controls['foodOption'].getRawValue()?.name}} restaurant will be selected!</div>
   </div>
 
   <div class="flex-row justify-space-between gap-md">
     <p-button label="Previous" (click)="onPrevious()"/>
-    <p-button label="Next" (click)="onNext()"/>
+    <p-button label="Submit" (click)="onSubmit()"/>
   </div>
 
 </div>

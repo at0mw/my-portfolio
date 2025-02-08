@@ -2,6 +2,17 @@
 
   <div class="form-selection-area">
     <div class="stack flex-center label-large opacity-7">What food would le Boons like? We might be here a while...</div>
+
+    <div class="food-select-flex">
+      @for(food of foodOptions; track food.id;) {
+        <div class="food-option-container"
+             [class.selected]="valentineFormGroup.controls['foodOption'].value === food"
+             (click)="onFoodOptionSelect(food)">
+          <img class="food-image" [src]="'assets/images/food-categories/' + food.img" alt="{{food.name}}">
+          {{food.name}}
+        </div>
+      }
+    </div>
   </div>
 
   <div class="flex-row justify-space-between gap-md">

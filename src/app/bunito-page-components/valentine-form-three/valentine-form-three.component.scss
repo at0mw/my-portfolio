@@ -1,0 +1,34 @@
+.food-select-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.food-option-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: box-shadow 250ms cubic-bezier(.4, 0, .23, 1);
+  &:hover {
+    border: 2px solid var(--atom-color-primary);
+    box-shadow: var(--atom-elevation-four-shadow);
+  }
+  &.selected {
+    border: 2px solid var(--atom-p-primary-color);
+    box-shadow:  var(--atom-p-primary-color) 0 5px 5px -3px, var(--atom-p-primary-color) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
+  }
+
+  img.food-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}

@@ -15,11 +15,33 @@ import {DatePipe} from "@angular/common";
 export class ValentineFormFourComponent {
   @Input() valentineFormGroup!: FormGroup;
   @Output() activateCallback = new EventEmitter<number>();
-  onNext() {
-    // this.activateCallback.emit(3);
-  }
+  private currentAudio: HTMLAudioElement | null = null;
 
   onPrevious() {
     this.activateCallback.emit(3);
+  }
+
+  onSubmit() {
+    // Email invitation
+    // TODO - Go to celebration page xD
+    if (this.currentAudio) {
+      this.currentAudio.pause();
+      this.currentAudio.currentTime = 0;
+    }
+
+    this.currentAudio = new Audio('assets/sounds/brainrot-cat.mp3');
+
+    const restartTime = 4.59; // Restart at exactly 4.88s
+
+    this.currentAudio.addEventListener('timeupdate', () => {
+      if (this.currentAudio && this.currentAudio.currentTime >= restartTime) {
+        this.currentAudio.currentTime = 0;
+        this.currentAudio.play();
+      }
+    });
+
+    this.currentAudio.play().catch(error => {
+      console.error("Error playing the sound: ", error);
+    });
   }
 }

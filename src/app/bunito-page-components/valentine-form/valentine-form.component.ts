@@ -13,11 +13,6 @@ import {Steps} from "primeng/steps";
   selector: 'atom-valentine-form',
   imports: [
     Card,
-    Stepper,
-    StepList,
-    Step,
-    StepPanels,
-    StepPanel,
     ValentineFormOneComponent,
     ValentineFormTwoComponent,
     ValentineFormThreeComponent,
@@ -46,7 +41,7 @@ export class ValentineFormComponent {
       label: 'Invitation',
     }
   ]
-  activeStep: number = 0;
+  activeStep: number = 2;
   constructor() {
     // Setup form
     this.valentineFormGroup.addControl('valentineAcceptance', new FormControl(false, Validators.requiredTrue));
