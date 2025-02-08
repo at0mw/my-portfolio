@@ -1,6 +1,6 @@
 <div class="header-area right-area">
   @if (darkMode$ | async; as darkMode) {
-    <div class="header-button outline-text light-dark-mode-button" (click)="onLightDarkModeToggle(darkMode !== 'dark')"
+    <div class="surface header-button outline-text light-dark-mode-button" (click)="onLightDarkModeToggle(darkMode !== 'dark')"
          [ngClass]="{'dark-mode': darkMode === 'dark', 'toggled': themeModeToggled}">
       <i class="relative-container fa-light small-icon"
          [ngClass]="{'fa-sun-bright': darkMode !== 'dark', 'fa-moon': darkMode === 'dark'}"></i>
