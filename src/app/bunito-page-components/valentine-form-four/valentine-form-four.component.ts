@@ -3,6 +3,8 @@ import {FormGroup} from "@angular/forms";
 import {DatePipe} from "@angular/common";
 import JSConfetti from "js-confetti";
 import {Button} from "primeng/button";
+import {SendFormService} from "../../services/send-form.service";
+import {BunitoValentine} from "../../interfaces/bunito-valentine.interface";
 
 @Component({
   selector: 'atom-valentine-form-four',
@@ -18,6 +20,8 @@ export class ValentineFormFourComponent implements OnInit, OnDestroy {
   private currentAudio: HTMLAudioElement | null = null;
   private jsConfetti!: JSConfetti;
   timeout: any;
+
+  constructor(private sendFormService: SendFormService) { }
 
   ngOnInit() {
     this.jsConfetti = new JSConfetti();
@@ -83,6 +87,12 @@ export class ValentineFormFourComponent implements OnInit, OnDestroy {
   }
 
   private submitChoices() {
-
+    if(this.valentineFormGroup.valid) {
+      const bunitoForm: BunitoValentine = {
+        date: this.valentineFormGroup.controls['date'].value ?? "Error: No date selected",
+        food: this.valentineFormGroup.controls['foodOption'].value ?? "Error: No food selected",
+      }
+      this.sendFormService.sendForm(bunitoForm);
+    }
   }
 }

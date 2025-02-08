@@ -7,6 +7,7 @@ import { primeNgToTokens } from '../styling/prime-ng/prime-ng-to-tokens';
 import Aura from "@primeng/themes/aura";
 import {definePreset} from "@primeng/themes";
 import {provideAnimations} from "@angular/platform-browser/animations";
+import {provideHttpClient, withFetch} from "@angular/common/http";
 
 const bunitoPreset = definePreset(Aura, {
   semantic: {
@@ -32,6 +33,7 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideAnimations(),
     provideRouter(routes),
+    provideHttpClient(withFetch()),
     providePrimeNG({
       theme: {
         preset: bunitoPreset,
