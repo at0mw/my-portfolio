@@ -1,7 +1,7 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Button} from "primeng/button";
 import {DatePicker} from "primeng/datepicker";
-import {FormsModule} from "@angular/forms";
+import {FormGroup, FormsModule} from "@angular/forms";
 
 @Component({
   selector: 'atom-valentine-form-two',
@@ -14,6 +14,7 @@ import {FormsModule} from "@angular/forms";
   styleUrl: './valentine-form-two.component.scss'
 })
 export class ValentineFormTwoComponent {
+  @Input() valentineFormGroup!: FormGroup;
   @Output() activateCallback = new EventEmitter<number>();
   date: Date = new Date();
   currentDate: Date = new Date(this.date.getTime() - 6000);

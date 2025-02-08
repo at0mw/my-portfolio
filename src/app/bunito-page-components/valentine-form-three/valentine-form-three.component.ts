@@ -1,5 +1,6 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Button} from "primeng/button";
+import {FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'atom-valentine-form-three',
@@ -10,6 +11,7 @@ import {Button} from "primeng/button";
   styleUrl: './valentine-form-three.component.scss'
 })
 export class ValentineFormThreeComponent {
+  @Input() valentineFormGroup!: FormGroup;
   @Output() activateCallback = new EventEmitter<number>();
 
   onNext() {

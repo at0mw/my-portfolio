@@ -1,5 +1,5 @@
-<div class="bunito-valentine">
-  <p-card class="bunito-card">
+<form [formGroup]="valentineFormGroup" class="bunito-valentine">
+<!--  <p-card class="bunito-card">-->
     <div class="header-area">
       <h1 class="headline-medium">
         <i class="fa-solid fa-heart fa-fade icon-size-28 primary-pink"></i>
@@ -7,9 +7,9 @@
         <i class="fa-solid fa-heart fa-fade icon-size-28 primary-pink"></i>
       </h1>
     </div>
-  </p-card>
-  <p-card class="bunito-card">
-    <p-stepper [value]="1" class="basis-[50rem]">
+<!--  </p-card>-->
+  <p-stepper [value]="1" class="basis-[50rem]">
+    <p-card class="bunito-card">
       <p-step-list>
         <p-step [value]="1">
           <div class="step-title">
@@ -32,31 +32,32 @@
           </div>
         </p-step>
       </p-step-list>
-      <p-step-panels>
-        <p-step-panel [value]="1">
-          <ng-template #content let-activateCallback="activateCallback">
-            <atom-valentine-form-one (activateCallback)="activateCallback($event)"></atom-valentine-form-one>
-          </ng-template>
-        </p-step-panel>
+    </p-card>
 
-        <p-step-panel [value]="2">
-          <ng-template #content let-activateCallback="activateCallback">
-            <atom-valentine-form-two (activateCallback)="activateCallback($event)"></atom-valentine-form-two>
-          </ng-template>
-        </p-step-panel>
+    <p-step-panels>
+      <p-step-panel [value]="1">
+        <ng-template #content let-activateCallback="activateCallback">
+          <atom-valentine-form-one [valentineFormGroup]="valentineFormGroup" (activateCallback)="activateCallback($event)"></atom-valentine-form-one>
+        </ng-template>
+      </p-step-panel>
 
-        <p-step-panel [value]="3">
-          <ng-template #content let-activateCallback="activateCallback">
-            <atom-valentine-form-three (activateCallback)="activateCallback($event)"></atom-valentine-form-three>
-          </ng-template>
-        </p-step-panel>
+      <p-step-panel [value]="2">
+        <ng-template #content let-activateCallback="activateCallback">
+          <atom-valentine-form-two [valentineFormGroup]="valentineFormGroup" (activateCallback)="activateCallback($event)"></atom-valentine-form-two>
+        </ng-template>
+      </p-step-panel>
 
-        <p-step-panel [value]="4">
-          <ng-template #content let-activateCallback="activateCallback">
-            <atom-valentine-form-four (activateCallback)="activateCallback($event)"></atom-valentine-form-four>
-          </ng-template>
-        </p-step-panel>
-      </p-step-panels>
-    </p-stepper>
-  </p-card>
-</div>
+      <p-step-panel [value]="3">
+        <ng-template #content let-activateCallback="activateCallback">
+          <atom-valentine-form-three [valentineFormGroup]="valentineFormGroup" (activateCallback)="activateCallback($event)"></atom-valentine-form-three>
+        </ng-template>
+      </p-step-panel>
+
+      <p-step-panel [value]="4">
+        <ng-template #content let-activateCallback="activateCallback">
+          <atom-valentine-form-four [valentineFormGroup]="valentineFormGroup" (activateCallback)="activateCallback($event)"></atom-valentine-form-four>
+        </ng-template>
+      </p-step-panel>
+    </p-step-panels>
+  </p-stepper>
+</form>

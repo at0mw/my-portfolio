@@ -1,12 +1,28 @@
-<div class="form-page">
+<form [formGroup]="valentineFormGroup" class="form-page">
 
   <div class="form-selection-area">
     <div class="stack flex-center label-large opacity-7">Will you be my Valentine?</div>
+    <div #imageCompare class="flex-center" [style.height]="'400px'" [style.width]="'100%'">
+      <p-image-compare [tabindex]="1">
+        <ng-template #left>
+          <img src="/assets/images/sad-cat.jpg" alt="Bunito Valentine"/>
+        </ng-template>
+        <ng-template #right>
+          <img src="/assets/images/cat-cat-jumping.gif" alt="Bunito Valentine"/>
+        </ng-template>
+      </p-image-compare>
+    </div>
+
+    <div class="stack">
+      <div class="flex-row justify-space-between gap-md">
+        <p-toggle-button formControlName="valentineAcceptance" (onChange)="onToggleValentinesResponse($event)"/>
+      </div>
+    </div>
   </div>
 
   <div class="flex-row justify-space-between gap-md">
-    <p-button label="Previous" (click)="onPrevious()"/>
+    <p-button label="Previous"/>
     <p-button label="Next" (click)="onNext()"/>
   </div>
 
-</div>
+</form>
