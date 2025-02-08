@@ -41,6 +41,11 @@ export class ValentineFormOneComponent implements AfterViewInit, OnDestroy {
 
   ngOnDestroy() {
     this.detachSliderListener();
+
+    if (this.currentAudio) {
+      this.currentAudio.pause();
+      this.currentAudio.currentTime = 0;
+    }
   }
 
   private initializeElements() {

@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnDestroy, Output} from '@angular/core';
 import {Button} from "primeng/button";
 import {FormGroup} from "@angular/forms";
 import { FoodOptions } from '../../interfaces/food-options.interface';
@@ -12,11 +12,18 @@ import {FOOD_OPTIONS} from "../../constants/food-options.const";
   templateUrl: './valentine-form-three.component.html',
   styleUrl: './valentine-form-three.component.scss'
 })
-export class ValentineFormThreeComponent {
+export class ValentineFormThreeComponent implements OnDestroy {
   @Input() valentineFormGroup!: FormGroup;
   @Output() activateCallback = new EventEmitter<number>();
   foodOptions: FoodOptions[] = FOOD_OPTIONS;
   private currentAudio: HTMLAudioElement | null = null;
+
+  ngOnDestroy() {
+    if (this.currentAudio) {
+      this.currentAudio.pause();
+      this.currentAudio.currentTime = 0;
+    }
+  }
 
   onNext() {
     this.activateCallback.emit(4);
