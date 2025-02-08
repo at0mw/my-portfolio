@@ -2,8 +2,8 @@
 
   <div class="form-selection-area">
     <div class="stack flex-center label-large opacity-7">Will you be my Valentine?</div>
-    <div #imageCompare class="flex-center" [style.height]="'400px'" [style.width]="'100%'">
-      <p-image-compare [tabindex]="1">
+    <div #imageCompare class="image-compare-container">
+      <p-image-compare class="image-compare" [tabindex]="1">
         <ng-template #left>
           <img src="/assets/images/sad-cat.jpg" alt="Bunito Valentine"/>
         </ng-template>
@@ -20,9 +20,9 @@
     </div>
   </div>
 
-  <div class="flex-row justify-space-between gap-md">
-    <p-button label="Previous"/>
-    <p-button label="Next" (click)="onNext()"/>
+  <div class="flex-end justify-space-between gap-md padding-right-medium padding-left-medium">
+<!--    <p-button label="Previous"/>-->
+    <p-button  [disabled]="!valentineFormGroup.controls['valentineAcceptance'].valid" label="Next" (click)="onNext()"/>
   </div>
 
 </form>

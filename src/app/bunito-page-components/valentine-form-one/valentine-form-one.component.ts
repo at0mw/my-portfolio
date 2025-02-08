@@ -118,7 +118,7 @@ export class ValentineFormOneComponent implements AfterViewInit, OnDestroy {
         this.currentAudio.pause();
         this.currentAudio.currentTime = 0;
       }
-      this.currentAudio = new Audio('assets/sounds/fucks-sake-boons.m4a');
+      this.currentAudio = new Audio('assets/sounds/rude.m4a');
       this.currentAudio.play().catch(error => {
         console.error("Error playing the sound: ", error);
       });

@@ -1,11 +1,13 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Button} from "primeng/button";
 import {FormGroup} from "@angular/forms";
+import {DatePipe} from "@angular/common";
 
 @Component({
   selector: 'atom-valentine-form-four',
   imports: [
-    Button
+    Button,
+    DatePipe
   ],
   templateUrl: './valentine-form-four.component.html',
   styleUrl: './valentine-form-four.component.scss'

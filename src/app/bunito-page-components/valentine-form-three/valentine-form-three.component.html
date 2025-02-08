@@ -6,7 +6,7 @@
 
   <div class="flex-row justify-space-between gap-md">
     <p-button label="Previous" (click)="onPrevious()"/>
-    <p-button label="Next" (click)="onNext()"/>
+    <p-button  [disabled]="!valentineFormGroup.controls['foodOption'].valid" label="Next" (click)="onNext()"/>
   </div>
 
 </div>

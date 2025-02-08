@@ -1,0 +1,9 @@
+.image-compare-container {
+  display: flex;
+  width: 300px;
+}
+
+.image-compare {
+  border-radius: var(--atom-p-card-border-radius);
+  aspect-ratio: 1;
+}

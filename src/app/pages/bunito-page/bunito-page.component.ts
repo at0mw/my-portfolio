@@ -19,15 +19,22 @@ import {ValentineFormComponent} from "../../bunito-page-components/valentine-for
   styleUrl: './bunito-page.component.scss'
 })
 export class BunitoPageComponent {
+  showScreenMask: boolean = false;
   speedDialItems: any[] = [
     {
       label: 'themeToggle',
     },
     {
       label: 'love',
-    },
-    {
-      label: 'fullScreen',
-    },
+    }
   ]
+
+  onHideSpeedDial() {
+    console.log('hide');
+    this.showScreenMask = false;
+  }
+
+  onShowSpeedDial() {
+    this.showScreenMask = true;
+  }
 }
