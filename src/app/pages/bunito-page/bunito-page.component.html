@@ -8,11 +8,8 @@
           <atom-theme-mode-toggle/>
         }
         @case ('love') {
-          <atom-love-button/>
+          <atom-love-button (click)="onLoveButtonClick()"/>
         }
-        <!--          @case ('fullScreen') {-->
-          <!--            <atom-full-screen-toggle/>-->
-          <!--          }-->
       }
     </ng-template>
   </p-speeddial>
@@ -20,7 +17,20 @@
 
 
 @if(showScreenMask) {
-  <div class="screen-darken"></div>
+  <div class="screen-darken" (click)="onHideMask($event)"></div>
+
+  @if(showLove) {
+    <div class="full-screen-gallery" (click)="onHideMask($event)">
+      <p-galleria class="gallery-container" [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '350px' }" [numVisible]="5">
+        <ng-template #item let-item>
+          <img class="main-image" [src]="item.src" />
+        </ng-template>
+        <ng-template #thumbnail let-item>
+          <img class="thumbnail-image" [src]="item.src"/>
+        </ng-template>
+      </p-galleria>
+    </div>
+  }
 }
 
 
