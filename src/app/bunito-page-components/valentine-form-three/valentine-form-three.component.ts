@@ -13,7 +13,7 @@ export class ValentineFormThreeComponent {
   @Output() activateCallback = new EventEmitter<number>();
 
   onNext() {
-    // this.activateCallback.emit(3);
+    this.activateCallback.emit(4);
   }
 
   onPrevious() {

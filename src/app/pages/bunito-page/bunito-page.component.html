@@ -1,5 +1,25 @@
 <div class="bunito-page-container">
-    <atom-valentine-form></atom-valentine-form>
+    <atom-valentine-form class="flex-1" [style.width]="'100%'"></atom-valentine-form>
+
+  <div class="fixed-bottom-right">
+    <p-speeddial [model]="speedDialItems" [radius]="80" type="quarter-circle" direction="up-left">
+
+      <ng-template #item let-item let-toggleCallback="toggleCallback">
+        @switch (item.label) {
+          @case ('themeToggle') {
+            <atom-theme-mode-toggle/>
+          }
+          @case ('love') {
+            <atom-love-button/>
+          }
+          @case ('fullScreen') {
+            <atom-full-screen-toggle/>
+          }
+        }
+      </ng-template>
+    </p-speeddial>
+  </div>
+
 </div>
 
 
@@ -16,23 +36,3 @@
 
 
 
-
-
-<div class="bottom-corner-box">
-  <p-speeddial [model]="speedDialItems" [radius]="80" type="quarter-circle" direction="up-left">
-
-    <ng-template #item let-item let-toggleCallback="toggleCallback">
-      @switch (item.label) {
-        @case ('themeToggle') {
-          <atom-theme-mode-toggle/>
-        }
-        @case ('love') {
-          <atom-love-button/>
-        }
-        @case ('fullScreen') {
-          <atom-full-screen-toggle/>
-        }
-      }
-    </ng-template>
-  </p-speeddial>
-</div>

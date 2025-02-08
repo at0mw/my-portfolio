@@ -5,6 +5,7 @@ import {Button} from "primeng/button";
 import {ValentineFormOneComponent} from "../valentine-form-one/valentine-form-one.component";
 import {ValentineFormTwoComponent} from "../valentine-form-two/valentine-form-two.component";
 import {ValentineFormThreeComponent} from "../valentine-form-three/valentine-form-three.component";
+import {ValentineFormFourComponent} from "../valentine-form-four/valentine-form-four.component";
 
 @Component({
   selector: 'atom-valentine-form',
@@ -17,7 +18,8 @@ import {ValentineFormThreeComponent} from "../valentine-form-three/valentine-for
     StepPanel,
     ValentineFormOneComponent,
     ValentineFormTwoComponent,
-    ValentineFormThreeComponent
+    ValentineFormThreeComponent,
+    ValentineFormFourComponent
   ],
   templateUrl: './valentine-form.component.html',
   styleUrl: './valentine-form.component.scss'

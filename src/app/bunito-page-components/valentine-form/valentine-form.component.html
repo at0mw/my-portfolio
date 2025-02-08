@@ -11,9 +11,26 @@
   <p-card class="bunito-card">
     <p-stepper [value]="1" class="basis-[50rem]">
       <p-step-list>
-        <p-step [value]="1">Proposal</p-step>
-        <p-step [value]="2">Date</p-step>
-        <p-step [value]="3">Invitation</p-step>
+        <p-step [value]="1">
+          <div class="step-title">
+            Proposal
+          </div>
+        </p-step>
+        <p-step [value]="2">
+          <div class="step-title">
+            Date
+          </div>
+        </p-step>
+        <p-step [value]="3">
+          <div class="step-title">
+            Food
+          </div>
+        </p-step>
+        <p-step [value]="4">
+          <div class="step-title">
+            Invitation
+          </div>
+        </p-step>
       </p-step-list>
       <p-step-panels>
         <p-step-panel [value]="1">
@@ -31,6 +48,12 @@
         <p-step-panel [value]="3">
           <ng-template #content let-activateCallback="activateCallback">
             <atom-valentine-form-three (activateCallback)="activateCallback($event)"></atom-valentine-form-three>
+          </ng-template>
+        </p-step-panel>
+
+        <p-step-panel [value]="4">
+          <ng-template #content let-activateCallback="activateCallback">
+            <atom-valentine-form-four (activateCallback)="activateCallback($event)"></atom-valentine-form-four>
           </ng-template>
         </p-step-panel>
       </p-step-panels>

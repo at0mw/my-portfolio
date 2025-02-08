@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {UiThemeService} from "../../../protocol/services/ui-theme-observer.service";
 import {AsyncPipe, NgClass} from "@angular/common";
 import {NavHamburgerButtonComponent} from "../../single-elements/nav-hamburger-button/nav-hamburger-button.component";
+import {UiThemeService} from "../../services/ui-theme.service";
 
 @Component({
     selector: 'atom-header-bar',

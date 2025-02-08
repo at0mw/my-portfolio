@@ -9,7 +9,6 @@ import {ValentineFormComponent} from "../../bunito-page-components/valentine-for
 @Component({
   selector: 'atom-bunito-page',
   imports: [
-    Card,
     ThemeModeToggleComponent,
     SpeedDial,
     LoveButtonComponent,

@@ -2,6 +2,12 @@ import {Routes} from '@angular/router';
 import {HomePageComponent} from "./pages/home-page/home-page.component";
 import {CoreUiComponent} from "./core/core-ui/core-ui.component";
 import {BunitoPageComponent} from "./pages/bunito-page/bunito-page.component";
+import {ValentineFormOneComponent} from "./bunito-page-components/valentine-form-one/valentine-form-one.component";
+import {ValentineFormTwoComponent} from "./bunito-page-components/valentine-form-two/valentine-form-two.component";
+import {
+  ValentineFormThreeComponent
+} from "./bunito-page-components/valentine-form-three/valentine-form-three.component";
+import {ValentineFormFourComponent} from "./bunito-page-components/valentine-form-four/valentine-form-four.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: '/bunito', pathMatch: 'full'},
@@ -14,5 +20,16 @@ export const routes: Routes = [
       {path: 'home', title: 'Home', component: HomePageComponent},
     ]
   },
-  {path: 'bunito', title: 'Bunito', component: BunitoPageComponent},
+  {
+    path: 'bunito',
+    title: 'Bunito',
+    component: BunitoPageComponent,
+    // children: [
+    //   {path: '', pathMatch: 'full', redirectTo: 'proposal'},
+    //   {path: 'proposal', title: 'Proposal', component: ValentineFormOneComponent},
+    //   {path: 'date', title: 'Date', component: ValentineFormTwoComponent},
+    //   {path: 'plans', title: 'Plans', component: ValentineFormThreeComponent},
+    //   {path: 'invitation', title: 'Invitation', component: ValentineFormFourComponent},
+    // ]
+  },
 ];

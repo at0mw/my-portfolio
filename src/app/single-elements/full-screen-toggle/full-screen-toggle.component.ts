@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {UiFullScreenService} from "../../services/ui-fullscreen.service";
 
 @Component({
   selector: 'atom-full-screen-toggle',
@@ -8,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class FullScreenToggleComponent {
 
+  constructor(private uiFullscreenService: UiFullScreenService) {
+  }
+
+  onFullScreenToggle() {
+    this.uiFullscreenService.toggleFullScreenState();
+  }
 }

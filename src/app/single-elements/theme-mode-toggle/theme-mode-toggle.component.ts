@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {UiThemeService} from "../../../protocol/services/ui-theme-observer.service";
 import {AsyncPipe, NgClass} from "@angular/common";
+import {UiThemeService} from "../../services/ui-theme.service";
 
 @Component({
   selector: 'atom-theme-mode-toggle',

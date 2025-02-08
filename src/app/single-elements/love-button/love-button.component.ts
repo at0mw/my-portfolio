@@ -3,9 +3,7 @@ import {AsyncPipe} from "@angular/common";
 
 @Component({
   selector: 'atom-love-button',
-    imports: [
-        AsyncPipe
-    ],
+    imports: [],
   templateUrl: './love-button.component.html',
   styleUrl: './love-button.component.scss'
 })

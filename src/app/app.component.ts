@@ -4,7 +4,7 @@ import {CoreUiComponent} from "./core/core-ui/core-ui.component";
 
 @Component({
     selector: 'atom-root',
-  imports: [CoreUiComponent, RouterOutlet],
+  imports: [RouterOutlet],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })

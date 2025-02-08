@@ -5,8 +5,8 @@
   align-items: center;
   flex-direction: column;
   height: 100%;
-  //padding: 1rem;
-  padding-top: 1rem;
+  padding: 1rem;
+  //padding-top: 1rem;
 }
 .bunito-card {
   min-width: 1100px;
@@ -21,4 +21,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .step-title {
+    display: none;
+  }
+
 }
