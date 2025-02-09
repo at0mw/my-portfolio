@@ -39,12 +39,12 @@ export class ValentineFormThreeComponent implements OnDestroy {
   }
 
   private playAudio(audioKey: string) {
-    if (!audioKey) return;
-
     if (this.currentAudio) {
       this.currentAudio.pause();
       this.currentAudio.currentTime = 0;
     }
+
+    if (!audioKey) return;
 
     this.currentAudio = new Audio('assets/sounds/food-categories/' + audioKey);
 
